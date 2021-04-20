@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Каталог</title>
+</head>
+
+<!-- ПОСМОТРИ В КОНЦЕ НА БЛОК SCRIPT -->
+
+<body>
+    <main class="main">
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb main__breadcrumb">
+                            <li class="breadcrumb-item breadcrumb-item--active"><a href="/">Главная страница</a></li>
+                            <li class="breadcrumb-item"><a href="/">Каталог</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="sub-main-title main__sub-main-title">Каталог</h1>
+                </div>
+            </div>
+            <div class="row">
+                <aside class="col-12 col-sm-12 col-md-4 col-lg-3 subcategories-aside main__subcategories-aside">
+                    <nav
+                        class="navbar navbar-expand-sm navbar-light align-items-start flex-sm-column flex-row subcategories-aside__nav">
+                        <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>
+                            <span class="subcategories-aside__title">
+                                Фильтры:
+                            </span>
+                        </a>
+                        <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </a>
+                        <div class="collapse navbar-collapse sidebar">
+                            <div class="col-sm-12 p-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="input-keywords">Поиск по ключевым словам:</label>
+                                            <input type="text" class="form-control sub-input-text main__sub-input-text"
+                                                id="input-keywords" placeholder="Введите ключевое слово">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="cloud-tags">
+                                            <div class="cloud-tags__tag">
+                                                <span class="cloud-tags__legend">
+                                                    Слово 1
+                                                </span>
+                                                <button class="cloud-tags__btn">
+                                                    x
+                                                </button>
+                                            </div>
+                                            <div class="cloud-tags__tag">
+                                                <span class="cloud-tags__legend">
+                                                    Слово 2
+                                                </span>
+                                                <button class="cloud-tags__btn">
+                                                    x
+                                                </button>
+                                            </div>
+                                            <div class="cloud-tags__tag">
+                                                <span class="cloud-tags__legend">
+                                                    Длинное слово
+                                                </span>
+                                                <button class="cloud-tags__btn">
+                                                    x
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col p-0">
+                                        <ul class="list-group subcategories catalog-main__subcategories">
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Радиокомпоненты
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Линии производства и сборки
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Хоз. товары
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Для маркетплейсов
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Сувенирная продукция+
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Электроника и техника
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Хоз товары, товары для офиса
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Перчатки, маски, антибактериальные средства
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Пищевая упаковка и тара
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Комплектующие для производства
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item subcategories__item--active">
+                                                <a href="">
+                                                    Промышленное
+                                                    оборудование
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center">
+                            <span class="main__all-products">Найдено 3504 товара</span>
+                        </div>
+                        <div
+                            class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex justify-content-sm-start justify-content-md-start justify-content-lg-end">
+                            <div class="sub-filter">
+                                <span class="sub-filter__legend">По цене</span>
+                                <select class="custom-select sub-filter__select">
+                                    <option selected>Сортировать</option>
+                                    <option value="1">Один</option>
+                                    <option value="2">Два</option>
+                                    <option value="3">Три</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="sub-secondary-title main__sub-secondary-title--first">
+                                Радиокомпоненты
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="main__catalog-component-img">
+                                <img src="./content/radio-components.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                            <div class="row main__catalog-component-advs">
+                                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                    <span class="main__catalog-component-advantage">Преимущество 1</span>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                    <span class="main__catalog-component-advantage">Преимущество 1</span>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                    <span class="main__catalog-component-advantage">Преимущество 1</span>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                    <span class="main__catalog-component-advantage">Преимущество 1</span>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                    <span class="main__catalog-component-advantage">Преимущество 1</span>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                    <span class="main__catalog-component-advantage">Преимущество 1</span>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm-12">
+                                    <div
+                                        class="flex-column flex-sm-column flex-md-row catalog-component-answer main__catalog-component-answer">
+                                        <div class="catalog-component-answer__left">
+                                            <h2 class="sub-secondary-title catalog-component-answer__title">
+                                                Ответим в течение 5 минут
+                                            </h2>
+                                            <span class="catalog-component-answer__mail">contact@deply.ru</span>
+                                        </div>
+                                        <div class="catalog-component-answer__right">
+                                            <!-- ВОЗМОЖНО ВМЕСТО КНОПКИ КУПИТЬ БУДЕТ ССЫЛКА, НО ВЕРОЯТНО ПРИ КЛИКЕ БУДЕТ ДОБАВЛЕНИЕ В КОРЗИНУ -->
+                                            <button class="catalog-component-answer__btn">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row mt-5">
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 mb-4">
+                                    <div class="card catalog-component-product">
+                                        <div class="catalog-component-product__container">
+                                            <span class="catalog-component-product__vendor">
+                                                Артикул: BD 0041
+                                            </span>
+                                            <img class="card-img-top catalog-component-product__img"
+                                                src="./content/catalog-product.png" alt="Продукт">
+                                            <div class="card-body">
+                                                <h5 class="card-title catalog-component-product__title">
+                                                    Вибропреобразователь ВПМ-2</h5>
+                                                <p class="card-text catalog-component-product__description">Есть в
+                                                    наличии (13600)
+                                                    Срок поставки от 2 недель</p>
+                                                <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                                <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                            </div>
+                                            <button class="catalog-component-product__btn" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <span>
+                                                    Оставить заявку
+                                                </span>
+                                                <div class="catalog-component-product__img-container">
+                                                    <img src="./icons/phone-request.svg" alt="">
+                                                    <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 mb-4">
+                                    <div class="card catalog-component-product">
+                                        <div class="catalog-component-product__container">
+                                            <span class="catalog-component-product__vendor">
+                                                Артикул: BD 0041
+                                            </span>
+                                            <img class="card-img-top catalog-component-product__img"
+                                                src="./content/catalog-product.png" alt="Продукт">
+                                            <div class="card-body">
+                                                <h5 class="card-title catalog-component-product__title">
+                                                    Вибропреобразователь ВПМ-2</h5>
+                                                <p class="card-text catalog-component-product__description">Есть в
+                                                    наличии (13600)
+                                                    Срок поставки от 2 недель</p>
+                                                <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                                <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                            </div>
+                                            <button class="catalog-component-product__btn" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <span>
+                                                    Оставить заявку
+                                                </span>
+                                                <div class="catalog-component-product__img-container">
+                                                    <img src="./icons/phone-request.svg" alt="">
+                                                    <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 mb-4">
+                                    <div class="card catalog-component-product">
+                                        <div class="catalog-component-product__container">
+                                            <span class="catalog-component-product__vendor">
+                                                Артикул: BD 0041
+                                            </span>
+                                            <img class="card-img-top catalog-component-product__img"
+                                                src="./content/catalog-product.png" alt="Продукт">
+                                            <div class="card-body">
+                                                <h5 class="card-title catalog-component-product__title">
+                                                    Вибропреобразователь ВПМ-2</h5>
+                                                <p class="card-text catalog-component-product__description">Есть в
+                                                    наличии (13600)
+                                                    Срок поставки от 2 недель</p>
+                                                <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                                <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                            </div>
+                                            <button class="catalog-component-product__btn" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <span>
+                                                    Оставить заявку
+                                                </span>
+                                                <div class="catalog-component-product__img-container">
+                                                    <img src="./icons/phone-request.svg" alt="">
+                                                    <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 mb-4">
+                                    <div class="card catalog-component-product">
+                                        <div class="catalog-component-product__container">
+                                            <span class="catalog-component-product__vendor">
+                                                Артикул: BD 0041
+                                            </span>
+                                            <img class="card-img-top catalog-component-product__img"
+                                                src="./content/catalog-product.png" alt="Продукт">
+                                            <div class="card-body">
+                                                <h5 class="card-title catalog-component-product__title">
+                                                    Вибропреобразователь ВПМ-2</h5>
+                                                <p class="card-text catalog-component-product__description">Есть в
+                                                    наличии (13600)
+                                                    Срок поставки от 2 недель</p>
+                                                <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                                <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                            </div>
+                                            <button class="catalog-component-product__btn" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <span>
+                                                    Оставить заявку
+                                                </span>
+                                                <div class="catalog-component-product__img-container">
+                                                    <img src="./icons/phone-request.svg" alt="">
+                                                    <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 mb-4">
+                                    <div class="card catalog-component-product">
+                                        <div class="catalog-component-product__container">
+                                            <span class="catalog-component-product__vendor">
+                                                Артикул: BD 0041
+                                            </span>
+                                            <img class="card-img-top catalog-component-product__img"
+                                                src="./content/catalog-product.png" alt="Продукт">
+                                            <div class="card-body">
+                                                <h5 class="card-title catalog-component-product__title">
+                                                    Вибропреобразователь ВПМ-2</h5>
+                                                <p class="card-text catalog-component-product__description">Есть в
+                                                    наличии (13600)
+                                                    Срок поставки от 2 недель</p>
+                                                <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                                <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                            </div>
+                                            <button class="catalog-component-product__btn" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <span>
+                                                    Оставить заявку
+                                                </span>
+                                                <div class="catalog-component-product__img-container">
+                                                    <img src="./icons/phone-request.svg" alt="">
+                                                    <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 mb-4">
+                                    <div class="card catalog-component-product">
+                                        <div class="catalog-component-product__container">
+                                            <span class="catalog-component-product__vendor">
+                                                Артикул: BD 0041
+                                            </span>
+                                            <img class="card-img-top catalog-component-product__img"
+                                                src="./content/catalog-product.png" alt="Продукт">
+                                            <div class="card-body">
+                                                <h5 class="card-title catalog-component-product__title">
+                                                    Вибропреобразователь ВПМ-2</h5>
+                                                <p class="card-text catalog-component-product__description">Есть в
+                                                    наличии (13600)
+                                                    Срок поставки от 2 недель</p>
+                                                <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                                <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                            </div>
+                                            <button class="catalog-component-product__btn" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <span>
+                                                    Оставить заявку
+                                                </span>
+                                                <div class="catalog-component-product__img-container">
+                                                    <img src="./icons/phone-request.svg" alt="">
+                                                    <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunities">
+                        <div class="row opportunities__container">
+                            <div class="col-12 col-sm-6 col-lg-2">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/finger.svg" alt="">
+                                    <h5 class="opportunity__title">Надежность</h5>
+                                    <p class="opportunity__description">
+                                        Все поставщики аккредитованы и проверены по списку из более чем 10 пунктов.
+                                        Более 10
+                                        000 партнёров на территории Китая.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-2">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/shield.svg" alt="">
+                                    <h5 class="opportunity__title">Страхование</h5>
+                                    <p class="opportunity__description">
+                                        Грузы застрахованы в компании надежного страхового партнёра.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-2">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/map-point.svg" alt="">
+                                    <h5 class="opportunity__title">Доставка по РФ</h5>
+                                    <p class="opportunity__description">
+                                        Осуществляем логистику грузов по РФ своими силами или крупнейшими ТК, в
+                                        зависимости
+                                        от особенностей груза.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-2">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/phone.svg" alt="">
+                                    <h5 class="opportunity__title">Ответ 5 минут</h5>
+                                    <p class="opportunity__description">
+                                        Наш специалист связывается по указанными вами контактами в течение 5 минут и
+                                        запрашивает необходимую для расчёта параметры заказ.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-2">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/tag.svg" alt="">
+                                    <h5 class="opportunity__title">Справедливая цена</h5>
+                                    <p class="opportunity__description">
+                                        Являемся прямым диллеров/дистрибьютором заводов-производителей, имеем репутацию
+                                        на
+                                        рынке и получаем лучшие диллерские цены.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="sub-secondary-title main__sub-secondary-title--second">
+                                Купить оптом напрямую из Китая
+                            </h2>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="sub-catalog-description">
+                                Товары из каталога поставляются напрямую от производителя, по лучшим ценам и условиям.
+                                Наши компетенции позволяет оптимизировать весь цикл внешнеэкономической сделки и
+                                предложить наиболее конкурентные условия. Мы работаем в режиме многозадачности, даем
+                                высокую результативность. Используем проверенные транспортные коридоры, предлагаем
+                                услуги штатных представителей в Китае. Логистический аутсорсинг – управление цепочкой
+                                поставок в комплексе, без рисков.
+                                Работаем в режиме многозадачности, даем высокую результативность. Используем проверенные
+                                транспортные коридоры, предлагаем услуги штатных представителей в Китае. Логистический
+                                аутсорсинг – управление цепочкой поставок в комплексе, без рисков.
+                                <br>
+                                <br>
+                                Решением Вашей задачи займутся специалисты с практическим опытом 10 лет и более из
+                                финансового, юридического, таможенного, логистического отделов. Контрактная логистика по
+                                доставке товаров в Москву и по России в целом систематизирована, исключает вероятность
+                                ошибочных действий из-за человеческого фактора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-5">
+                        <div class="col-sm-12">
+                            <div class="main-opportunities">
+                                <div class="main-opportunities__container">
+                                    <h2 class="sub-secondary-title main__sub-secondary-title--third">Основные
+                                        преимущества</h2>
+                                    <ul class="list-group main-opportunities__list">
+                                        <li class="list-group-item">Оперативное исполнение обязательств перед клиентами
+                                        </li>
+                                        <li class="list-group-item">Юридическая чистота и благонадежность</li>
+                                        <li class="list-group-item">Существенный опыт в логистике грузов из Китая</li>
+                                        <li class="list-group-item">Широкий спект услуг</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="catalog-form">
+                                        <div class="catalog-form__container">
+                                            <input type="text" class="form-control catalog-form__input"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="ФИО или организация">
+
+                                            <input type="text" class="form-control catalog-form__input"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Номер телефона в любом формате">
+
+                                            <input type="text" class="form-control catalog-form__input"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="E-mail (необязательно)">
+
+                                            <textarea class="catalog-form__area" name="" id="" cols="30" rows="10"
+                                                placeholder="Доп. информация"></textarea>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Я принимаю
+                                                    условия <a href="">
+                                                        пользовательского соглашения</a></label>
+                                            </div>
+                                             <div class="catalog-form__btns">
+                                                <div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="customFile">
+                                                        <label class="custom-file-label" for="customFile">Прикрепить
+                                                            заявку</label>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="customFile">
+                                                        <label class="custom-file-label" for="customFile">Прикрепить
+                                                            реквизиты</label>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" id="product-form-submit"
+                                                    class="catalog-form__btn">
+                                                    Отправить заявку
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        // ОБРАТИ ВНИМАНИЕ, ЕСЛИ БУДЕШЬ ПРИКРУЧИВАТЬ ФУНКЦИОНАЛ КНОПКАМ, НЕ ЗАБУДЬ ПРО 
+        // e.prevent... и e.stopPr...., их тоже надо перенести, иначе при клике на кнопку будет переход по ссылке
+        const outerBtns = document.querySelectorAll('.catalog-component-product__outer');
+        for (let i = 0; i < outerBtns.length; i++) {
+            outerBtns[i].addEventListener('click', (e) => {
+                // e.preventDefault();
+                // e.stopPropagation();
+                // console.log(e);
+            })
+        }
+    </script>
+</body>
+
+</html>

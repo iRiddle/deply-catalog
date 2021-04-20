@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Подкатегории</title>
+</head>
+
+<body>
+    <!-- СЮДА ХЕДЕР -->
+
+    <main class="main">
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb main__breadcrumb">
+                            <li class="breadcrumb-item breadcrumb-item--active"><a href="/">Главная страница</a></li>
+                            <li class="breadcrumb-item"><a href="/">Каталог</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="sub-main-title main__sub-main-title">Каталог</h1>
+                </div>
+            </div>
+            <div class="row">
+                <aside class="col-12 col-sm-12 col-md-4 col-lg-3 subcategories-aside main__subcategories-aside">
+                    <nav
+                        class="navbar navbar-expand-sm navbar-light align-items-start flex-sm-column flex-row subcategories-aside__nav">
+                        <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>
+                            <span class="subcategories-aside__title">
+                                Фильтры:
+                            </span>
+                        </a>
+                        <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </a>
+                        <div class="collapse navbar-collapse sidebar">
+                            <div class="col-sm-12 p-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="search-by-keywords">Поиск по ключевым словам:</label>
+                                            <input type="text" id='search-by-keywords'
+                                                class="form-control sub-input-text main__sub-input-text"
+                                                placeholder="Введите ключевое слово">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div id='cloud-tags' class="cloud-tags">
+                                            <!-- или иной уникальный тег -->
+                                            <div class="cloud-tags__tag" id='cloud-tag-1'>
+                                                <span class="cloud-tags__legend">
+                                                    Слово 1
+                                                </span>
+                                                <button class="cloud-tags__btn" onclick="removeTag(1)">
+                                                    x
+                                                </button>
+                                            </div>
+                                            <div class="cloud-tags__tag" id='cloud-tag-2'>
+                                                <span class="cloud-tags__legend">
+                                                    Слово 2
+                                                </span>
+                                                <button class="cloud-tags__btn" onclick="removeTag(2)">
+                                                    x
+                                                </button>
+                                            </div>
+                                            <div class="cloud-tags__tag" id='cloud-tag-3'>
+                                                <span class="cloud-tags__legend">
+                                                    Длинное слово
+                                                </span>
+                                                <button class="cloud-tags__btn" onclick="removeTag(3)">
+                                                    x
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col p-0">
+                                        <ul class="list-group subcategories main__subcategories">
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Радиокомпоненты
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Линии производства и сборки
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Хоз. товары
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Для маркетплейсов
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Сувенирная продукция+
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Электроника и техника
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Хоз товары, товары для офиса
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Перчатки, маски, антибактериальные средства
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Пищевая упаковка и тара
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Комплектующие для производства
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item subcategories__item--active">
+                                                <a href="">
+                                                    Промышленное
+                                                    оборудование
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+                    <div class="row flex-sm-column flex-lg-row">
+                        <div class="col-sm-12 col-lg-6 align-self-sm-start align-self-md-center">
+                            <span class="main__all-products">Найдено 3504 товара</span>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 d-flex justify-content-sm-start justify-content-lg-end">
+                            <div class="sub-filter">
+                                <span id='sub-filter-legend' class="sub-filter__legend">По цене</span>
+                                <select id='sub-filter-selection' class="custom-select sub-filter__select">
+                                    <option selected>Сортировать</option>
+                                    <!-- ВОТ ЗДЕСЬ VALUE ПОМЕНЯТЬ НА НУЖНЫЕ -->
+
+                                    <option value="1">Фильтр1</option>
+                                    <option value="2">Фильтр2</option>
+                                    <option value="3">Фильтр3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="sub-secondary-title main__sub-secondary-title--first">
+                                Промышленное оборудование
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                            <div class="card industrial-equipment">
+                                <div class="card-img-top">
+                                    <img src="./content/sub1.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <div class="industrial-equipment__body">
+                                        <div>
+                                            <a href="/" class="card-title industrial-equipment__title">Фрезерные
+                                                станки</a>
+                                            <span class="industrial-equipment__count">Есть в наличии (136)</span>
+                                        </div>
+                                        <a href="">
+                                            <img src="./icons/arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                            <div class="card industrial-equipment">
+                                <div class="card-img-top">
+                                    <img src="./content/sub2.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <div class="industrial-equipment__body">
+                                        <div>
+                                            <a href="/" class="card-title industrial-equipment__title">Фрезерные
+                                                станки</a>
+                                            <span class="industrial-equipment__count">Есть в наличии (136)</span>
+                                        </div>
+                                        <a href="">
+                                            <img src="./icons/arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                            <div class="card industrial-equipment">
+                                <div class="card-img-top">
+                                    <img src="./content/sub3.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <div class="industrial-equipment__body">
+                                        <div>
+                                            <a href="/" class="card-title industrial-equipment__title">Фрезерные
+                                                станки</a>
+                                            <span class="industrial-equipment__count">Есть в наличии (136)</span>
+                                        </div>
+                                        <a href="">
+                                            <img src="./icons/arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                            <div class="card industrial-equipment">
+                                <div class="card-img-top">
+                                    <img src="./content/sub3.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <div class="industrial-equipment__body">
+                                        <div>
+                                            <a href="/" class="card-title industrial-equipment__title">Фрезерные
+                                                станки</a>
+                                            <span class="industrial-equipment__count">Есть в наличии (136)</span>
+                                        </div>
+                                        <a href="">
+                                            <img src="./icons/arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                            <div class="card industrial-equipment">
+                                <div class="card-img-top">
+                                    <img src="./content/sub3.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <div class="industrial-equipment__body">
+                                        <div>
+                                            <a href="/" class="card-title industrial-equipment__title">Фрезерные
+                                                станки</a>
+                                            <span class="industrial-equipment__count">Есть в наличии (136)</span>
+                                        </div>
+                                        <a href="">
+                                            <img src="./icons/arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                            <div class="card industrial-equipment">
+                                <div class="card-img-top">
+                                    <img src="./content/sub3.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <div class="industrial-equipment__body">
+                                        <div>
+                                            <a href="/" class="card-title industrial-equipment__title">Фрезерные
+                                                станки</a>
+                                            <span class="industrial-equipment__count">Есть в наличии (136)</span>
+                                        </div>
+                                        <a href="">
+                                            <img src="./icons/arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunities">
+                        <div class="row justify-content-md-between opportunities__container">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/finger.svg" alt="">
+                                    <h5 class="opportunity__title">Надежность</h5>
+                                    <p class="opportunity__description">
+                                        Все поставщики аккредитованы и проверены по списку из более чем 10 пунктов.
+                                        Более 10
+                                        000 партнёров на территории Китая.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/shield.svg" alt="">
+                                    <h5 class="opportunity__title">Страхование</h5>
+                                    <p class="opportunity__description">
+                                        Грузы застрахованы в компании надежного страхового партнёра.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/map-point.svg" alt="">
+                                    <h5 class="opportunity__title">Доставка по РФ</h5>
+                                    <p class="opportunity__description">
+                                        Осуществляем логистику грузов по РФ своими силами или крупнейшими ТК, в
+                                        зависимости
+                                        от особенностей груза.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/phone.svg" alt="">
+                                    <h5 class="opportunity__title">Ответ 5 минут</h5>
+                                    <p class="opportunity__description">
+                                        Наш специалист связывается по указанными вами контактами в течение 5 минут и
+                                        запрашивает необходимую для расчёта параметры заказ.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                                <div class="opportunity">
+                                    <img class="opportunity__img" src="./icons/tag.svg" alt="">
+                                    <h5 class="opportunity__title">Справедливая цена</h5>
+                                    <p class="opportunity__description">
+                                        Являемся прямым диллеров/дистрибьютором заводов-производителей, имеем репутацию
+                                        на
+                                        рынке и получаем лучшие диллерские цены.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="sub-secondary-title main__sub-secondary-title--second">
+                                Купить оптом напрямую из Китая
+                            </h2>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="sub-catalog-description">
+                                Товары из каталога поставляются напрямую от производителя, по лучшим ценам и условиям.
+                                Наши компетенции позволяет оптимизировать весь цикл внешнеэкономической сделки и
+                                предложить наиболее конкурентные условия. Мы работаем в режиме многозадачности, даем
+                                высокую результативность. Используем проверенные транспортные коридоры, предлагаем
+                                услуги штатных представителей в Китае. Логистический аутсорсинг – управление цепочкой
+                                поставок в комплексе, без рисков.
+                                Работаем в режиме многозадачности, даем высокую результативность. Используем проверенные
+                                транспортные коридоры, предлагаем услуги штатных представителей в Китае. Логистический
+                                аутсорсинг – управление цепочкой поставок в комплексе, без рисков.
+                                <br>
+                                <br>
+                                Решением Вашей задачи займутся специалисты с практическим опытом 10 лет и более из
+                                финансового, юридического, таможенного, логистического отделов. Контрактная логистика по
+                                доставке товаров в Москву и по России в целом систематизирована, исключает вероятность
+                                ошибочных действий из-за человеческого фактора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-5">
+                        <div class="col-sm-12">
+                            <div class="main-opportunities">
+                                <div class="main-opportunities__container">
+                                    <h2 class="sub-secondary-title main__sub-secondary-title--third">Основные
+                                        преимущества</h2>
+                                    <ul class="list-group main-opportunities__list">
+                                        <li class="list-group-item">Оперативное исполнение обязательств перед клиентами
+                                        </li>
+                                        <li class="list-group-item">Юридическая чистота и благонадежность</li>
+                                        <li class="list-group-item">Существенный опыт в логистике грузов из Китая</li>
+                                        <li class="list-group-item">Широкий спект услуг</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- СЮДА ФУТЕР -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        const cloudTagsContainer = document.querySelector('#cloud-tags');
+        const searchByKeywords = document.querySelector('#search-by-keywords');
+        const subFilterSelection = document.querySelector("#sub-filter-selection");
+        const subFilterLegend = document.querySelector('#sub-filter-legend')
+
+        // ФИЛЬТРЫ
+        const subFiltersTitle = [{ id: 1, title: 'Фильтр1' }, { id: 2, title: 'Фильтр2' }, { id: 3, title: 'Фильтр3' }]
+
+        let searchValue = '';
+
+        function removeTag(id) {
+            const cloudTag = document.querySelector(`#cloud-tag-${id}`);
+            cloudTag.remove()
+        }
+
+        function sendFilterToServer(value) {
+            // value = это фильтр на сервак 
+            var filter = $(this);
+
+            $.ajax({
+                url: 'https://httpbin.org/get', // обработчик
+                data: filter.serialize(), // данные
+                type: filter.attr('method'), // тип запроса
+                beforeSend: function (xhr) {
+                },
+                success: function (data) {
+                },
+            });
+        }
+
+        searchByKeywords.addEventListener('input', (e) => {
+            searchValue = e.target.value
+        })
+
+        searchByKeywords.addEventListener('keydown', (e) => {
+            if (event.keyCode === 13 && searchValue.length > 1) {
+                const tagId = Math.floor(Math.random() * 10000) + 1;
+
+                cloudTagsContainer.insertAdjacentHTML('beforeend', `
+                <div class="cloud-tags__tag" id='cloud-tag-${tagId}'>
+                    <span class="cloud-tags__legend">
+                        ${searchValue.length > 14 ? `${searchValue.slice(0, 14)}…` : searchValue}
+                    </span >
+                    <button class="cloud-tags__btn" onclick="removeTag(${tagId})">
+                        x
+                    </button>
+                </div >
+                `)
+
+                searchByKeywords.value = '';
+                searchValue = ''
+            }
+        })
+
+
+
+        subFilterSelection.addEventListener('input', e => {
+            const subFilterValue = e.target.value;
+            const title = subFiltersTitle.filter(filter => filter.id === +subFilterValue)[0].title;
+            subFilterLegend.innerHTML = title
+
+            //////////////// вот здесь запрос на сервак сразу после выбора фильтра
+
+            sendFilterToServer(subFilterValue)
+        })
+
+    </script>
+</body>
+
+</html>

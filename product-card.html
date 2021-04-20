@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Карточка товара</title>
+</head>
+
+<body>
+     <main class="main">
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb main__breadcrumb">
+                            <li class="breadcrumb-item breadcrumb-item--active"><a href="/">Главная страница</a></li>
+                            <li class="breadcrumb-item"><a href="/">Каталог</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="sub-main-title main__sub-main-title">Каталог</h1>
+                </div>
+            </div>
+            <div class="row">
+                <aside class="col-12 col-sm-12 col-md-4 col-lg-3 subcategories-aside main__subcategories-aside">
+                    <nav
+                        class="navbar navbar-expand-sm navbar-light align-items-start flex-sm-column flex-row subcategories-aside__nav">
+                        <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>
+                            <span class="subcategories-aside__title">
+                                Фильтры:
+                            </span>
+                        </a>
+                        <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </a>
+                        <div class="collapse navbar-collapse sidebar">
+                            <div class="col-sm-12 p-0">
+                                <div class="row">
+                                    <div class="col p-0">
+                                        <ul class="list-group subcategories product-main__subcategories">
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Радиокомпоненты
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Линии производства и сборки
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Хоз. товары
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Для маркетплейсов
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Сувенирная продукция+
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Электроника и техника
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Хоз товары, товары для офиса
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Перчатки, маски, антибактериальные средства
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Пищевая упаковка и тара
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="">
+                                                    Комплектующие для производства
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item subcategories__item--active">
+                                                <a href="">
+                                                    Промышленное
+                                                    оборудование
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+                <article class="product col-md-8 col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="product__img-container">
+                                        <img src="./content/product-card.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="product__secondary-container">
+                                        <div class="product__secondary-img-container">
+                                            <img src="./content/product-card.png" alt="">
+                                        </div>
+                                        <div class="product__secondary-img-container">
+                                            <img src="./content/product-card.png" alt="">
+                                        </div>
+                                        <div class="product__secondary-img-container">
+                                            <img src="./content/product-card.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="product__description-container">
+                                <span class="product__vendor">
+                                    Артикул 075801
+                                </span>
+                                <h1 class="product__title">
+                                    Вибропреобразователь ВПМ-2
+                                </h1>
+                                <p class="product__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, habitant viverra
+                                    pharetra ac. Consectetur donec cursus viverra cursus ultrices nunc. Aliquet vel in
+                                    parturient ut eleifend. Platea netus augue gravida consectetur.
+                                </p>
+                                <div class="product__cost-container">
+                                    <div class="product__cost-dollar">
+                                        <span class="product__digit--d">€ 15</span>
+                                        <span class="product__piece--d">/шт.</span>
+                                    </div>
+                                    <div class="product__cost-rub">
+                                        <span class="product__digit--r">800 руб.</span>
+                                        <span class="product__piece--r">/шт.</span>
+                                    </div>
+                                </div>
+                                <div class="product__description-secondary-container">
+                                    <div class="product__description-secondary">
+                                        <span class="product__description-legend">
+                                            Дата последнего заказа:
+                                        </span>
+                                        <span class="product__description-value">
+                                            27.02.2021
+                                        </span>
+                                    </div>
+                                    <div class="product__description-secondary">
+                                        <span class="product__description-legend">
+                                            Количество штук в заказе:
+                                        </span>
+                                        <span class="product__description-value">
+                                            100 000 шт.
+                                        </span>
+                                    </div>
+                                    <div class="product__description-secondary">
+                                        <span class="product__description-legend">
+                                            Минимальный заказ:
+                                        </span>
+                                        <span class="product__description-value">
+                                            100шт.
+                                        </span>
+                                    </div>
+                                </div>
+                                <span class="product__availability">
+                                    Есть в наличии (3024)
+                                </span>
+                                <span class="product__term">
+                                    Срок поставки: от 2 недель
+                                </span>
+                                <div class="product__range-field">
+                                    <span class="product__range-start">
+                                        0
+                                    </span>
+                                    <input type="range" min="0" value="0" max="3024" step="1" class="custom-range"
+                                        id="range-count">
+                                    <span class="product__range-end">
+                                        3 024
+                                    </span>
+                                    <div class="product__rectangles-field"></div>
+                                    <span class="product__range-output" id="range-count-out">0</span>
+                                </div>
+                                <div class="product__range-btn-container">
+                                    <div class="product__range-btns">
+                                        <button id='product__range-btn--minus' class="product__range-btn">-</button>
+                                        <div class="product__range-count">0</div>
+                                        <button id='product__range-btn--plus' class="product__range-btn">+</button>
+                                    </div>
+                                    <button id="product-request-bill-btn" class="product__request-bill-btn">Запросить
+                                        счёт и срок поставки</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xs-12 col-md-4">
+                            <div class="product__detailed-legend">
+                                Описание
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xs-12">
+                            <div class="product__detailed-description">
+                                <p>
+                                    Первично специалистами компании Deply было найдено и верифицировано 12 системных
+                                    интеграторов для реализации данного проекта, однако из них как благонадежных было
+                                    выделено лишь 2. После чего рабочая группа выехала с выездной инспекцией и с целью
+                                    прохождения 2-ух дневного профильного обучения к производителю в КНР. По завершению
+                                    всех мероприятий на стороне поставщика в течение 20 дней товар прибыл на склад к
+                                    клиенту. После прохождения первичного монтажа оборудования специалисты Deply
+                                    осуществили комплекс пусконаладочных работ и корректную калибровку оборудования,
+                                    подготовив его к работе. По ходу 2-ух дневного визита на производство к клиенту
+                                    штатный персонал был обучен работе на данном оборудовании.
+                                </p>
+                                <h2 class="product__detailed-title">
+                                    Характеристики
+                                </h2>
+                                <hr class="product__detailed-hr">
+                                <ul class="product__detailed-list">
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__detailed-option">
+                                        <div class="product__detailed-option-container">
+                                            <span>Пункт 1</span>
+                                            <div class="product__detailed-option-line"></div>
+                                            <span>0,001 км/ч</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="similar-title">Похожее</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="similar-cards">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                        <div class="card catalog-component-product">
+                            <div class="catalog-component-product__container">
+                                <span class="catalog-component-product__vendor">
+                                    Артикул: BD 0041
+                                </span>
+                                <img class="card-img-top catalog-component-product__img"
+                                    src="./content/catalog-product.png" alt="Продукт">
+                                <div class="card-body">
+                                    <h5 class="card-title catalog-component-product__title">
+                                        Вибропреобразователь ВПМ-2</h5>
+                                    <p class="card-text catalog-component-product__description">Есть в
+                                        наличии (13600)
+                                        Срок поставки от 2 недель</p>
+                                    <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                    <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                </div>
+                                <a class="catalog-component-product__btn" href="">
+                                    <span>
+                                        Оставить заявку
+                                    </span>
+                                    <div class="catalog-component-product__img-container">
+                                        <img src="./icons/phone-request.svg" alt="">
+                                        <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                        <div class="card catalog-component-product">
+                            <div class="catalog-component-product__container">
+                                <span class="catalog-component-product__vendor">
+                                    Артикул: BD 0041
+                                </span>
+                                <img class="card-img-top catalog-component-product__img"
+                                    src="./content/catalog-product.png" alt="Продукт">
+                                <div class="card-body">
+                                    <h5 class="card-title catalog-component-product__title">
+                                        Вибропреобразователь ВПМ-2</h5>
+                                    <p class="card-text catalog-component-product__description">Есть в
+                                        наличии (13600)
+                                        Срок поставки от 2 недель</p>
+                                    <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                    <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                </div>
+                                <a class="catalog-component-product__btn" href="">
+                                    <span>
+                                        Оставить заявку
+                                    </span>
+                                    <div class="catalog-component-product__img-container">
+                                        <img src="./icons/phone-request.svg" alt="">
+                                        <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                        <div class="card catalog-component-product">
+                            <div class="catalog-component-product__container">
+                                <span class="catalog-component-product__vendor">
+                                    Артикул: BD 0041
+                                </span>
+                                <img class="card-img-top catalog-component-product__img"
+                                    src="./content/catalog-product.png" alt="Продукт">
+                                <div class="card-body">
+                                    <h5 class="card-title catalog-component-product__title">
+                                        Вибропреобразователь ВПМ-2</h5>
+                                    <p class="card-text catalog-component-product__description">Есть в
+                                        наличии (13600)
+                                        Срок поставки от 2 недель</p>
+                                    <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                    <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                </div>
+                                <a class="catalog-component-product__btn" href="">
+                                    <span>
+                                        Оставить заявку
+                                    </span>
+                                    <div class="catalog-component-product__img-container">
+                                        <img src="./icons/phone-request.svg" alt="">
+                                        <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                        <div class="card catalog-component-product">
+                            <div class="catalog-component-product__container">
+                                <span class="catalog-component-product__vendor">
+                                    Артикул: BD 0041
+                                </span>
+                                <img class="card-img-top catalog-component-product__img"
+                                    src="./content/catalog-product.png" alt="Продукт">
+                                <div class="card-body">
+                                    <h5 class="card-title catalog-component-product__title">
+                                        Вибропреобразователь ВПМ-2</h5>
+                                    <p class="card-text catalog-component-product__description">Есть в
+                                        наличии (13600)
+                                        Срок поставки от 2 недель</p>
+                                    <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                    <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                </div>
+                                <a class="catalog-component-product__btn" href="">
+                                    <span>
+                                        Оставить заявку
+                                    </span>
+                                    <div class="catalog-component-product__img-container">
+                                        <img src="./icons/phone-request.svg" alt="">
+                                        <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                        <div class="card catalog-component-product">
+                            <div class="catalog-component-product__container">
+                                <span class="catalog-component-product__vendor">
+                                    Артикул: BD 0041
+                                </span>
+                                <img class="card-img-top catalog-component-product__img"
+                                    src="./content/catalog-product.png" alt="Продукт">
+                                <div class="card-body">
+                                    <h5 class="card-title catalog-component-product__title">
+                                        Вибропреобразователь ВПМ-2</h5>
+                                    <p class="card-text catalog-component-product__description">Есть в
+                                        наличии (13600)
+                                        Срок поставки от 2 недель</p>
+                                    <span class="catalog-component-product__cost">€ 15/шт.</span>
+                                    <span class="catalog-component-product__cost--rub">1.370 руб/шт</span>
+                                </div>
+                                <a class="catalog-component-product__btn" href="">
+                                    <span>
+                                        Оставить заявку
+                                    </span>
+                                    <div class="catalog-component-product__img-container">
+                                        <img src="./icons/phone-request.svg" alt="">
+                                        <span class="catalog-component-product__outer">Быстрый заказ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form id="product-form" class="product-form" method='GET'>
+                        <h2 class="product-form__title">Оставьте заявку на расчет цен и сроков поставки</h2>
+                        <input type="text" class="product-form__input" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="ФИО или организация">
+                        <input type="text" class="product-form__input" placeholder="Номер телефона в любом формате"
+                            id="exampleCheck1">
+                        <input type="text" class="product-form__input" placeholder="E-mail (необязательно)"
+                            id="exampleCheck1">
+                        <input id='count-of-proudct' type="hidden" value="0" name="">
+                        <textarea class="product-form__area" name="" id="" placeholder="Состав заказа" rows="10">
+                        </textarea>
+                         <div class="product-form__btns">
+                            <div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Прикрепить заявку</label>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Прикрепить реквизиты</label>
+                                </div>
+                            </div>
+                            <button type="submit" id="product-form-submit" class="product-form__submit">
+                                <span>
+                                    Отправить заявку
+                                </span>
+                            </button>
+                        </div>
+                        <p class="product-form__description">Прикрепите заявку и свои реквизиты - и мы сможем выслать
+                            вам счет</p>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Я принимаю условия <a href="">
+                                    пользовательского соглашения</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div id="product-alert-component" class="alert alert-primary product-alert-component" style="display: none;">
+            Заявка отправлена успешно
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        const rangeInput = document.querySelector('#range-count');
+        const rectanglesContainer = document.querySelector('.product__rectangles-field');
+        const outerBtns = document.querySelectorAll('.catalog-component-product__outer');
+
+        const rangeOut = document.querySelector('#range-count-out');
+        const rangeReqOut = document.querySelector('.product__range-count')
+
+        const plusRangeBtn = document.querySelector('#product__range-btn--plus');
+        const minusRangeBtn = document.querySelector('#product__range-btn--minus');
+
+        const countOfProudct = document.querySelector('#count-of-proudct')
+
+        // Вот это значение можно отправлять на сервак
+        let rangeValue = +rangeInput.value;
+        //
+
+        const startRec = 0;
+        const endRec = 6
+
+        for (let i = startRec; i < endRec; i++) {
+            const rectangle = document.createElement('div');
+            if (i === 0 || i === 5) {
+                rectangle.style.height = "8px";
+            } else {
+                rectangle.style.height = "4px";
+            }
+            rectangle.style.width = "1px";
+            rectangle.style.backgroundColor = '#7C8793'
+            rectanglesContainer.appendChild(rectangle)
+        }
+
+        $('.similar-cards').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='./icons/arrow-left.svg'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='./icons/arrow-right.svg'>",
+
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2,
+                        arrows: false
+                    }
+                },
+            ]
+        });
+
+        for (let i = 0; i < outerBtns.length; i++) {
+            outerBtns[i].addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log(e);
+            })
+        }
+
+        rangeInput.addEventListener('input', () => {
+            rangeOut.innerHTML = rangeInput.value
+            rangeReqOut.innerHTML = rangeInput.value
+            rangeValue = +rangeInput.value
+        })
+
+        const initValue = (rangeValue) => {
+            rangeOut.innerHTML = rangeValue
+            rangeReqOut.innerHTML = rangeValue
+            rangeInput.value = rangeValue
+            countOfProudct.value = rangeValue
+        }
+
+        plusRangeBtn.addEventListener('click', () => {
+            if (rangeValue === +rangeInput.getAttribute("max")) {
+                return
+            }
+            rangeValue += 1
+            initValue(rangeValue)
+        })
+
+        minusRangeBtn.addEventListener('click', () => {
+            if (rangeValue === +rangeInput.getAttribute("min")) {
+                return
+            }
+            rangeValue -= 1
+            initValue(rangeValue)
+        })
+
+        $('#product-request-bill-btn').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#product-form").offset().top
+            }, 500);
+        });
+
+        $('#product-form').submit(function (e) {
+            e.preventDefault()
+            var filter = $(this);
+            $.ajax({
+                url: 'https://httpbin.org/get', // обработчик
+                data: filter.serialize(), // данные
+                type: filter.attr('method'), // тип запроса
+                beforeSend: function (xhr) {
+                    $("#product-form-submit").attr("disabled", true)
+                    $('#product-form-submit').append('<span id="spinner-form-btn" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="margin-left:12px;color:#F7F9FB"></span>');
+                },
+                success: function (data) {
+                    setTimeout(function () {
+                        $("#product-form-submit").attr("disabled", false)
+                        $("#spinner-form-btn").remove();
+                        $("#product-alert-component").fadeIn(500).delay(2000).fadeOut(500)
+                    }, 2000);
+                },
+
+            });
+            return false;
+        });
+
+    </script>
+</body>
+
+</html>
